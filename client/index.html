@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Rating Log</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Movie Rating Log</h1>
+    <nav id="userBar">
+      <span id="greeting">Not signed in</span>
+      <button id="loginButton">Sign In</button>
+      <button id="logoutButton" class="hidden">Sign Out</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Rated Movies</h2>
+      <p class="hint">This list is loaded from the database.</p>
+
+      <button id="loadButton">Reload Movies</button>
+
+      <p id="status">Loading...</p>
+
+      <table id="movieTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Score</th>
+            <th>Rated By</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="movieTableBody">
+        </tbody>
+      </table>
+
+      <p id="average"></p>
+    </section>
+
+    <section class="card">
+      <h2>Rate a Movie</h2>
+      <p class="hint">You must be signed in to add a rating.</p>
+
+      <form id="movieForm">
+        <label for="title">Movie Title</label>
+        <input type="text" id="title" name="title" maxlength="60" placeholder="Pluto Nash in 3D" required>
+
+        <label for="score">Score (1 to 10)</label>
+        <input type="number" id="score" name="score" min="1" max="10" required>
+
+        <button type="submit" id="submitButton">Submit Rating</button>
+      </form>
+
+      <div id="result"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

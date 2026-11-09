@@ -1,0 +1,181 @@
+body
+{
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+header
+{
+  border-bottom: 2px solid #000000;
+  padding: 16px 20px;
+}
+
+header h1
+{
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 15px;
+}
+
+#greeting
+{
+  font-weight: bold;
+}
+
+main
+{
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card
+{
+  border: 1px solid #000000;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card h2
+{
+  margin-top: 0;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 6px;
+}
+
+.hint
+{
+  font-size: 14px;
+  color: #555555;
+}
+
+button
+{
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 6px 14px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover
+{
+  background-color: #eeeeee;
+}
+
+button:disabled
+{
+  color: #999999;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:disabled:hover
+{
+  background-color: #ffffff;
+}
+
+.hidden
+{
+  display: none;
+}
+
+table
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td
+{
+  border: 1px solid #999999;
+  padding: 6px;
+  text-align: left;
+}
+
+th
+{
+  background-color: #eeeeee;
+}
+
+#average
+{
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+label
+{
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input
+{
+  padding: 6px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  border: 1px solid #999999;
+}
+
+form button
+{
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+#status
+{
+  font-size: 14px;
+  color: #555555;
+}
+
+#result
+{
+  margin-top: 16px;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.good
+{
+  border-left: 6px solid #000000 !important;
+  display: block !important;
+}
+
+.normal
+{
+  border-left: 6px solid #777777 !important;
+  display: block !important;
+}
+
+.bad
+{
+  border-left: 6px solid #cccccc !important;
+  display: block !important;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "movie-rating-log-server",
+  "version": "2.0.0",
+  "description": "Server side for the Movie Rating Log, with DynamoDB and Cognito login",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.650.0",
+    "@aws-sdk/lib-dynamodb": "^3.650.0",
+    "aws-jwt-verify": "^4.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
